@@ -1,15 +1,15 @@
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
-import Particles from "react-particles-js";
-import Navbar from "./components/Navbar";
+import AccountForm from "./components/AccountForm";
 import Header from "./components/Header";
-
+import Navbar from "./components/Navbar";
+import Particles from "react-particles-js";
 
 function App() {
   return (
     <>
       <Particles 
-      className="particles-canvas"
+        className="particles-canvas"
         params={{
           particles: {
             number: {
@@ -31,6 +31,7 @@ function App() {
       />
       <Navbar />
       <Header />
+      <AccountForm />
     </>
   );
 }
