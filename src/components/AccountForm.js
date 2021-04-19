@@ -8,10 +8,6 @@ import FormControl from "@material-ui/core/FormControl";
 import Input from "@material-ui/core/Input";
 import InputLabel from "@material-ui/core/InputLabel";
 // import { Link } from "react-router-dom";
-import Radio from "@material-ui/core/Radio";
-import RadioGroup from "@material-ui/core/RadioGroup";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-// import { FormControl, FormHelperText, InputLabel, Input } from "@material-ui/core";
 
 function AccountForm() {
     return (
@@ -24,11 +20,11 @@ function AccountForm() {
 
             <Grid item xs={12} align="center">
                 <FormControl component="fieldset">
-                    <FormHelperText>
+                    {/* <FormHelperText>
                         <div align="center">
                             Create Account
                         </div>
-                    </FormHelperText>
+                    </FormHelperText> */}
 
                     <FormControl>
                         <TextField
@@ -75,13 +71,6 @@ function AccountForm() {
                 </Button>
             </Grid>
         </Grid>
-        // <div>
-        //     <FormControl>
-        //         <InputLabel htmlFor="my-input">Email address</InputLabel>
-        //         <Input id="my-input" aria-describedby="my-helper-text" />
-        //         <FormHelperText id="my-helper-text">We'll never share your email.</FormHelperText>
-        //     </FormControl>
-        // </div>
     )
 }
 

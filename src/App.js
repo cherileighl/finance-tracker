@@ -1,9 +1,11 @@
-import './App.css';
+import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AccountForm from "./components/AccountForm";
+import Dashboard from "./components/Dashboard";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Particles from "react-particles-js";
+import Transaction from "./components/Transaction";
 
 function App() {
   return (
@@ -31,7 +33,17 @@ function App() {
       />
       <Navbar />
       <Header />
+      {/* Create budget  */}
+      {/* Dashboard (current budget) */}
+      {/* History (monthly view) */}
+      <Dashboard />
+      <hr></hr>
+      {/* Maybe make these pop-up forms? */}
+      <Transaction />
+      <hr></hr>
+      {/* Make this a pop-up form? */}
       <AccountForm />
+      <hr></hr>
     </>
   );
 }
