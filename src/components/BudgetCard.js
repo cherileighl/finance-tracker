@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
         transform: 'rotate(180deg)',
     },
     avatar: {
-        backgroundColor: red[500],
+        backgroundColor: "#395c35",
     },
 }));
 
@@ -58,7 +58,8 @@ const BorderLinearProgress = withStyles((theme) => ({
     },
     bar: {
         borderRadius:  5,
-        backgroundColor: "#1a90ff",
+        // backgroundColor: "#1a90ff",
+        backgroundColor: "#3b7277",
     },
 }))(LinearProgress);
 
@@ -101,9 +102,7 @@ function BudgetCard() {
             />    */}
             <CardContent>
                 <BorderLinearProgress variant="determinate" value={50} />
-                {/* <Typography variant="body2" color="textSecondary" component="p">
-                    This is where the typography text will go.
-                </Typography> */}
+                
             </CardContent>
             <CardActions disableSpacing>
                 <IconButton 

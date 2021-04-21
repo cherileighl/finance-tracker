@@ -84,7 +84,12 @@ nav ul li {
   max-width: 17.25rem;
   padding: 0 !important;
   height: 6rem !important;
+  color: var(--primary-orange) !important;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding-top: 30px !important;
 }
+
 
 @media(max-width: 768px) {
   .navbar-brand {
@@ -126,7 +131,7 @@ nav ul li {
 }
 
 .header-title h1 {
-  color: var(--primary-blue);
+  color: var(--primary-green);
   text-transform: uppercase;
   font-weight: bolder;
   font-size:80px;
@@ -181,4 +186,13 @@ nav ul li {
 .MuiButton-contained {
   background-color: var(--primary-blue) !important;
   color: var(--primary-white) !important;
+}
+
+/* Section Headers */
+.section-title {
+  color: var(--primary-orange);
+  text-transform: uppercase;
+  letter-spacing: 3px !important;
+  font-size: 25px !important;
+  padding-top: 50px;
 }

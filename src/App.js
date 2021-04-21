@@ -3,13 +3,21 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import AccountForm from "./components/AccountForm";
 import Dashboard from "./components/Dashboard";
 import Header from "./components/Header";
+import Budget from "./components/Budget";
 import Navbar from "./components/Navbar";
 import Particles from "react-particles-js";
 import Transaction from "./components/Transaction";
+import {
+  BrowserRouter as Router,
+  HashRouter,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
   return (
-    <>
+    <HashRouter>
       <Particles 
         className="particles-canvas"
         params={{
@@ -34,17 +42,23 @@ function App() {
       <Navbar />
       <Header />
       {/* Create budget  */}
-      {/* Dashboard (current budget) */}
       {/* History (monthly view) */}
-      <Dashboard />
+      <br></br>
+      <Budget />
+      <hr></hr> 
+
+      {/* Dashboard (current budget) */}
+      <Dashboard/>
       <hr></hr>
+
       {/* Maybe make these pop-up forms? */}
-      <Transaction />
+      <Transaction/>
       <hr></hr>
+
       {/* Make this a pop-up form? */}
       <AccountForm />
       <hr></hr>
-    </>
+    </ HashRouter>
   );
 }
 

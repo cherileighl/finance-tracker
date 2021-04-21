@@ -11,10 +11,10 @@ import InputLabel from "@material-ui/core/InputLabel";
 
 function AccountForm() {
     return (
-        <Grid container spacing={5}>
+        <Grid container spacing={5} id="account">
             <Grid item xs={12} align="center">
-                <Typography component='h4' variant='h4'>
-                    Create User
+                <Typography component='h4' variant='h4' className="section-title">
+                    New Account
                 </Typography>
             </Grid>
 
@@ -62,14 +62,10 @@ function AccountForm() {
            
             <Grid item xs={12} align="center">
                 <Button className="standard-btn" variant="contained">
-                    Create a Room
+                    Create User
                 </Button>
             </Grid>
-            <Grid item xs={12} align="center">
-                <Button color="primary" variant="contained" to="/">
-                    Back
-                </Button>
-            </Grid>
+            
         </Grid>
     )
 }

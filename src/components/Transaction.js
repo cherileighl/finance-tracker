@@ -10,21 +10,15 @@ import InputLabel from "@material-ui/core/InputLabel";
 
 function Transaction() {
     return (
-        <Grid container spacing={5}>
+        <Grid container spacing={5} id="transactions">
             <Grid item xs={12} align="center">
-                <Typography component='h4' variant='h4'>
+                <Typography component='h4' variant='h4' className="section-title">
                     New Transaction
                 </Typography>
             </Grid>
 
             <Grid item xs={12} align="center">
-                <FormControl component="fieldset">
-                    {/* <FormHelperText>
-                        <div align="center">
-                            Create Account
-                        </div>
-                    </FormHelperText> */}
-
+                <FormControl component="fieldset" width="500px">
                     <FormControl>
                         <TextField
                             required={true}
@@ -34,26 +28,22 @@ function Transaction() {
 
                     <FormControl>
                         <InputLabel htmlFor="first-name">First Name</InputLabel>
-                        <Input id="first-name   " aria-describedby="my-helper-text" />
-                        {/* <FormHelperText id="my-helper-text">We'll never share your email.</FormHelperText> */}
+                        <Input id="first-name" aria-describedby="my-helper-text" />
                     </FormControl>
 
                     <FormControl>
                         <InputLabel htmlFor="last-name">Last Name</InputLabel>
                         <Input id="last-name" aria-describedby="my-helper-text" />
-                        {/* <FormHelperText id="my-helper-text">We'll never share your email.</FormHelperText> */}
                     </FormControl>
 
                     <FormControl>
                         <InputLabel htmlFor="email">Email address</InputLabel>
                         <Input id="email" aria-describedby="my-helper-text" />
-                        {/* <FormHelperText id="my-helper-text">We'll never share your email.</FormHelperText> */}
                     </FormControl>
 
                     <FormControl>
                         <InputLabel htmlFor="password">Password</InputLabel>
                         <Input id="password" aria-describedby="my-helper-text" />
-                        {/* <FormHelperText id="my-helper-text">We'll never share your email.</FormHelperText> */}
                     </FormControl>
 
                 </FormControl>
